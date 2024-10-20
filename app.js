@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 // Rutas
 app.use('/api/campeones', require('./routes/campeonRutas'));
-app.use('/api/autenticacion', require('./routes/authRutas'));
+app.use('/api/auth', require('./routes/authRutas'));
 
 // Página principal
 app.get('/', (req, res) => {
