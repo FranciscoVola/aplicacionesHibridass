@@ -13,6 +13,8 @@ const app = express();
 app.use(express.json());
 
 app.use(express.static(path.join(__dirname, 'public')));
+
+
 // Rutas
 app.use('/api/campeones', require('./routes/campeonRutas'));
 app.use('/api/auth', require('./routes/authRutas'));

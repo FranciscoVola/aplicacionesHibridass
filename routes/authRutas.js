@@ -6,6 +6,7 @@ const router = express.Router();
 
 // Registro de usuario
 router.post('/registro', async (req, res) => {
+  console.log(req.body);
   const { nombre, email, password } = req.body;
 
   try {
